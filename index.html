@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .rightnav {
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+
+        }
+        .rightnav :hover{
+            color:red;
+            
+        }
+
+        .leftnav {
+            width: 50%;
+        }
+
+        .leftnav img {
+            height: 30px;
+            width: 44px;
+            border-radius: 50%;
+        }
+
+
+        .navbar {
+            display: flex;
+            /* position: sticky; */
+            width: 100%;
+            height: 30px;
+            background-color: rgba(241, 247, 247, 0.616);
+            /* border-radius: 30px; */
+            
+        }
+
+        .intro {
+            background: url(images/fruitimage.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.438);
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .div {
+            display: flex;
+        }
+
+
+        .rightnav ul {
+            color: black;
+            justify-content: space-around;
+            border: 4px;
+            display: flex;
+            align-items: center;
+            padding: 6px 0 0 0;
+            list-style-type: none;
+        }
+
+        .rightnav ul a{
+            text-decoration: none;
+        }
+        
+
+        .ul {
+            display: flex;
+        }
+
+        .section {
+            display: flex;
+        }
+
+        .container {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 0 0 25px;
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+        }
+
+        .about {
+            background: url(images/fruit.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .container1 {
+            height: 100vh;
+            width: 40%;
+            background: rgba(255, 251, 0, 0.637);
+            margin: 0 0 0 25px;
+            font-family: 'Dancing Script', cursive;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .contact {
+            background: url(images/1.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+            height: 100vh;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 0 1px;
+
+        }
+
+        .container2 {
+            height: 100vh;
+            width: 60%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-family: 'Dancing Script';
+            color: white;
+            background-color: rgba(0, 0, 0, 0.422);
+
+        }
+
+        .pogo img {
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .pogo {
+            color: white;
+            font-family: 'Dancing Script';
+            background-color: rgba(0, 0, 0, 0.422);
+        }
+
+
+        .contact div {
+            display: flex;
+        }
+
+        section {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar sticky">
+
+        <div class="leftnav">
+            <img src="images/apple.png" alt="logo">
+        </div>
+
+        <div class="rightnav">
+            <ul>
+                <li><a href="#Home"><b>Home</b></a></li>
+                <li><a href="#abt"><b>About Us</b></a></li>
+                <li><a href="#cnt"><b>Contact Us</b></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+    <section class="intro" id="Home">
+        <div class="container">
+            <h1>Fresh Fruits</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sequi nemo quae recusandae, assumenda
+                libero!</p>
+            <input type="text"><button>Search</button>
+        </div>
+    </section>
+    <section class="about" id="abt">
+        <div class="container1">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti iste maxime.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio a soluta asperiores, sapiente
+                iusto.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus tempore similique minima corrupti quaerat
+                quibusdam rerum adipisci explicabo odio iusto.</p>
+
+        </div>
+    </section>
+    <section class="contact" id="cnt">
+        <div class="container2">
+            <h1>Contact Us</h1>
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+                <br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                <br>
+                <label for="adress">Adress</label>
+                <input type="text" id="adress" name="adress" placeholder="Your adress">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+        <div class="pogo">
+            <h1>Follow Us On</h1>
+            <img style="width: 50px; height: 50px;" src="images/facebook.png" alt="image hai">
+            <img style="width: 50px; height: 50px;" src="images/instagram.jpg" alt="image hai">
+            <img style="width: 50px; height: 50px;" src="images/twitter.png" alt="image hai">
+        </div>
+
+    </section>
+
+</body>
+
+</html>
